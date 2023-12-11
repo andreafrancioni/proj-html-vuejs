@@ -22,14 +22,26 @@ export default {
 <template>
     <div>
         <div class="row">
-            <div class="col-3">
-                <img src="../assets/" alt="">
+            <div class="col-3 d-flex align-items-center">
+                <img src="../assets/avada-bakery-logo.png" alt="">
             </div>
-            <div class="col-6">
-                NavMenu
+            <div class="col-6 d-flex align-items-center">
+                <ul class="menuLinks d-flex align-items-center justify-content-between">
+                    <li>HOME</li>
+                    <li>SHOP</li>
+                    <li>ABOUT</li>
+                    <li>GALLERY</li>
+                    <li>LOCATIONS</li>
+                    <li>JOURNAL</li>
+                    <li>CONTACT</li>
+                </ul>
+
             </div>
-            <div class="col-3">
-                Profile
+            <div class="col-3 d-flex align-items-center justify-content-end">
+                <ul class="menuShop d-flex align-items-center justify-content-between">
+                    <li>ACCOUNT</li>
+                    <li><i class="fas fa-cart-shopping"></i></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -37,7 +49,20 @@ export default {
 
 <style scoped lang="scss">
 // importo variabili
-// @use './styles/partials/variables' as *;
+@use '../styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di AppComponent
+
+ul {
+
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        margin: 0 2em;
+        color: $fontColorViolet;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
 </style>
