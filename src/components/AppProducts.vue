@@ -1,9 +1,30 @@
 <script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "AppProducts",
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Navigation],
+        };
+    },
     data() {
         return {
             store
@@ -19,7 +40,7 @@ export default {
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="products d-flex align-items-center">
         <div class="col-4">
             <div class="product-text">
 
@@ -33,7 +54,24 @@ export default {
         </div>
         <div class="col-8">
             <div class="product-carousel">
-
+                <swiper :navigation="true" :modules="modules" class="mySwiper" :loop="true">
+                    <swiper-slide>
+                        <div class="imageLeft">
+                            <img src="../assets/choco-chip-cookies.jpg" alt="">
+                        </div>
+                        <div class="imageRight">
+                            <img src="../assets/strawberry-jam-cookies.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="imageLeft">
+                            <img src="../assets/cookies-with-ice-cream.jpg" alt="">
+                        </div>
+                        <div class="imageRight">
+                            <img src="../assets/home-bread.jpg" alt="">
+                        </div>
+                    </swiper-slide>
+                </swiper>
             </div>
         </div>
     </div>
@@ -43,7 +81,7 @@ export default {
 // importo variabili
 @use '../styles/partials/variables' as *;
 
-.wrapper {
+.products {
     padding: 10em;
     height: 100vh;
 }
@@ -68,5 +106,28 @@ export default {
         font-size: 14px;
         font-weight: 300;
     }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>
