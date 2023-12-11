@@ -2,6 +2,7 @@
 import AppHeader from "./components/AppHeader.vue"
 import AppHero from "./components/AppHero.vue"
 import AppFooter from "./components/AppFooter.vue"
+import AppProducts from "./components/AppProducts.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
@@ -11,25 +12,30 @@ export default {
 		AppHeader,
 		AppHero,
 		AppFooter,
+		AppProducts
 	},
 	data() {
 		return {
-			store
+			store,
+			headerBackgroundColor: 'transparent', // Colore di sfondo iniziale dell'header
+			scrollThreshold: 200, // Altezza di scroll per cambiare il colore
 		}
 	},
 	mounted() {
-		this.doThings();
-
-		// axios.get("indirizzo").then(risultato => {
-		// 	console.log(risultato);
-		// }).catch(errore => {
-		// 	console.error(errore);
-		// });
+		window.addEventListener('scroll', this.handleScroll);
+	},
+	beforeDestroy() {
+		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
-		doThings() {
-			console.log("App.vue does things");
-		}
+		handleScroll() {
+			// Verifica l'altezza dello scroll rispetto al threshold
+			if (window.scrollY > this.scrollThreshold) {
+				this.headerBackgroundColor = 'white'; // Cambia il colore dell'header
+			} else {
+				this.headerBackgroundColor = 'transparent'; // Ripristina il colore di sfondo iniziale
+			}
+		},
 	}
 }
 </script>
@@ -37,11 +43,12 @@ export default {
 <template>
 	<header>
 		<section class="pb-96">
-			<AppHeader />
+			<AppHeader :backgroundColor="headerBackgroundColor" />
 		</section>
 	</header>
 	<main>
 		<AppHero />
+		<AppProducts />
 	</main>
 	<footer>
 		<AppFooter />

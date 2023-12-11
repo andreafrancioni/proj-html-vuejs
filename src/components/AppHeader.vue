@@ -4,6 +4,10 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "AppHeader",
+
+    props: {
+        backgroundColor: String,
+    },
     data() {
         return {
             store
@@ -20,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <nav>
+    <nav :style="{ backgroundColor: backgroundColor }">
         <div class="row">
             <div class="col-3 d-flex align-items-center">
                 <img src="../assets/avada-bakery-logo.png" alt="">
@@ -55,6 +59,9 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+
+    transition: background-color 0.3s ease;
+    /* Aggiungi un'animazione al cambio di colore */
 
     .row {
         padding: 0 3em;
