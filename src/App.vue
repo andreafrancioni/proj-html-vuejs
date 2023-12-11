@@ -35,18 +35,17 @@ export default {
 </script>
 
 <template>
-	<div class="container">
-
-		<header>
+	<header>
+		<section class="container pb-96">
 			<AppHeader />
-		</header>
-		<main>
-			<AppHero />
-		</main>
-		<footer>
-			<AppFooter />
-		</footer>
-	</div>
+		</section>
+	</header>
+	<main>
+		<AppHero />
+	</main>
+	<footer>
+		<AppFooter />
+	</footer>
 </template>
 
 <style lang="scss">
@@ -59,7 +58,8 @@ export default {
 // @use './styles/partials/variables' as *;
 
 // ...qui eventuale SCSS di App.vue
-main {
-	padding: 1rem;
+
+.pb-96 {
+	padding-bottom: 96px;
 }
 </style>

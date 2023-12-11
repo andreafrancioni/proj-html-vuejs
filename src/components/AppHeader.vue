@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <nav>
         <div class="row">
             <div class="col-3 d-flex align-items-center">
                 <img src="../assets/avada-bakery-logo.png" alt="">
@@ -44,13 +44,17 @@ export default {
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
 </template>
 
 <style scoped lang="scss">
 // importo variabili
 @use '../styles/partials/variables' as *;
 
+nav {
+    position: fixed;
+    top: 0;
+}
 
 ul {
 
