@@ -46,6 +46,7 @@ export default {
     background-image: url("../assets/hero-header-bakery.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .hero-text {

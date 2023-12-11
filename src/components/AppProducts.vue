@@ -45,6 +45,7 @@ export default {
 
 .wrapper {
     padding: 10em;
+    height: 100vh;
 }
 
 .product-text {
