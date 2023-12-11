@@ -54,6 +54,11 @@ export default {
 nav {
     position: fixed;
     top: 0;
+    width: 100%;
+
+    .row {
+        padding: 0 3em;
+    }
 }
 
 ul {

@@ -36,7 +36,7 @@ export default {
 
 <template>
 	<header>
-		<section class="container pb-96">
+		<section class="pb-96">
 			<AppHeader />
 		</section>
 	</header>
