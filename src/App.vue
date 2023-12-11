@@ -18,7 +18,7 @@ export default {
 		return {
 			store,
 			headerBackgroundColor: 'transparent', // Colore di sfondo iniziale dell'header
-			scrollThreshold: 200, // Altezza di scroll per cambiare il colore
+			scrollThreshold: 50, // Altezza di scroll per cambiare il colore
 		}
 	},
 	mounted() {
