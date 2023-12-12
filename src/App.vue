@@ -3,6 +3,7 @@ import AppHeader from "./components/AppHeader.vue"
 import AppHero from "./components/AppHero.vue"
 import AppFooter from "./components/AppFooter.vue"
 import AppProducts from "./components/AppProducts.vue";
+import AppWeddingSection from "./components/AppWeddingSection.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
@@ -12,7 +13,8 @@ export default {
 		AppHeader,
 		AppHero,
 		AppFooter,
-		AppProducts
+		AppProducts,
+		AppWeddingSection,
 	},
 	data() {
 		return {
@@ -49,6 +51,7 @@ export default {
 	<main>
 		<AppHero />
 		<AppProducts />
+		<AppWeddingSection />
 	</main>
 	<footer>
 		<AppFooter />
