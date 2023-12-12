@@ -54,10 +54,14 @@ export default {
 
     h6 {
         font-size: 12px;
+        font-family: "Work Sans", Arial, Helvetica, sans-serif;
+        font-weight: 400;
     }
 
     h2 {
         font-size: 56px;
+        font-family: 'Source Serif 4';
+        font-weight: 700;
     }
 }
 

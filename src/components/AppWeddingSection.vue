@@ -94,6 +94,7 @@ export default {
 
     h2 {
         font-size: 35px;
+        font-family: "Source Sans 4";
         font-weight: 700;
     }
 }

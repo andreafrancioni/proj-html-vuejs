@@ -49,7 +49,7 @@ export default {
                     nulla id orci tempor convallis sed.</h6>
             </div>
             <div class="product-button text-center d-flex align-items-center justify-content-center flex-column mt-4">
-                <button class="btn">Explore our products</button>
+                <button class="btn">Shop All Products</button>
             </div>
         </div>
         <div class="col-9">
@@ -119,12 +119,14 @@ export default {
 
     h6 {
         font-size: 16px;
+        font-family: 'Work Sans';
         font-weight: 300;
     }
 
     h2 {
         font-size: 35px;
         font-weight: 700;
+        font-family: 'Source Serif 4';
     }
 }
 
@@ -153,13 +155,19 @@ export default {
     align-items: center;
 
     .image {
+        padding: 10px;
+
         h5 {
             font-size: 24px;
+            font-family: 'Source Serif 4';
+            font-weight: 700;
             color: $fontColorViolet;
             margin-top: 2rem;
         }
 
         h6 {
+            font-family: 'Work Sans';
+            font-weight: 400;
             font-size: 12px;
             color: $fontColorViolet;
             margin-top: 1rem;

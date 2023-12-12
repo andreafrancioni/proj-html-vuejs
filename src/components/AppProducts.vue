@@ -56,18 +56,18 @@ export default {
             <div class="product-carousel">
                 <swiper :navigation="true" :modules="modules" class="mySwiper" :loop="true">
                     <swiper-slide>
-                        <div class="imageLeft">
+                        <div class="image">
                             <img src="../assets/choco-chip-cookies.jpg" alt="">
                         </div>
-                        <div class="imageRight">
+                        <div class="image">
                             <img src="../assets/strawberry-jam-cookies.jpg" alt="">
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div class="imageLeft">
+                        <div class="image">
                             <img src="../assets/cookies-with-ice-cream.jpg" alt="">
                         </div>
-                        <div class="imageRight">
+                        <div class="image">
                             <img src="../assets/home-bread.jpg" alt="">
                         </div>
                     </swiper-slide>
@@ -91,11 +91,14 @@ export default {
 
     h6 {
         font-size: 12px;
+        font-family: 'Work Sans';
+        font-weight: 300;
     }
 
     h2 {
         font-size: 35px;
         font-weight: 700;
+        font-family: 'Source Serif 4';
     }
 }
 
@@ -106,6 +109,10 @@ export default {
         font-size: 14px;
         font-weight: 300;
     }
+}
+
+.image {
+    padding: 10px;
 }
 
 .swiper {
