@@ -3,6 +3,7 @@ import AppHeader from "./components/AppHeader.vue"
 import AppHero from "./components/AppHero.vue"
 import AppFooter from "./components/AppFooter.vue"
 import AppProducts from "./components/AppProducts.vue";
+import AppProducts2 from "./components/AppProducts2.vue";
 import AppWeddingSection from "./components/AppWeddingSection.vue";
 
 import axios from 'axios'; //importo Axios
@@ -15,6 +16,7 @@ export default {
 		AppFooter,
 		AppProducts,
 		AppWeddingSection,
+		AppProducts2,
 	},
 	data() {
 		return {
@@ -52,6 +54,7 @@ export default {
 		<AppHero />
 		<AppProducts />
 		<AppWeddingSection />
+		<AppProducts2 />
 	</main>
 	<footer>
 		<AppFooter />

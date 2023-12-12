@@ -105,7 +105,7 @@ export default {
     font-size: 1em;
     flex-wrap: wrap;
     background-color: transparent;
-    width: 550px
+    width: 100%;
 }
 
 .cardContent {
