@@ -15,3 +15,8 @@
 body {
     font-family: sans-serif;
 }
+
+[class^="col-"] {
+    margin: 0;
+    padding: 0;
+}
