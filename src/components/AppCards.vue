@@ -52,7 +52,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="row image2 d-flex align-items-center justify-content-between">
+        <div class="row image2 d-flex justify-content-between">
             <div class="col-6">
                 <div class="wrapperImage1">
                     <div class="col-12 d-flex align-items-center">
@@ -80,13 +80,14 @@ export default {
                 </div>
             </div>
             <div class="col-6">
-                <div class="col-12">
+                <div class="col-12 no-image d-flex align-items-center justify-content-between flex-column">
+
                     <h6>DONT JUST TAKE OUR WORLD FOR IT</h6>
 
-                    <h2>
+                    <p>
                         “Finally found an alternative to the mass produced products. Something that incorporates real
                         organic ingredients, nutrient dense wellness while promoting sustainability and activity.”
-                    </h2>
+                    </p>
 
                     <h6>
                         Rachel Cooper, Founder
@@ -126,6 +127,10 @@ export default {
 
 .services {
     padding: 0 10em;
+}
+
+.wrapperImage1 {
+    height: 100%;
 }
 
 .row.image1 {
@@ -182,8 +187,27 @@ export default {
     }
 }
 
+.bg-lilla {
+    background-color: #F6F0F2;
+}
+
+.no-image {
+    padding: 5rem;
+
+    h6 {
+        color: $fontColorViolet;
+    }
+
+    p {
+        color: $fontColorViolet;
+        font-size: 48px;
+        font-family: "Source Serif 4";
+        font-weight: 700;
+    }
+}
+
 .spacer {
-    height: 200px;
+    height: 50%;
 }
 
 .leftText {
