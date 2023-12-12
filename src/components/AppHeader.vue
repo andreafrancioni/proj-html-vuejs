@@ -56,6 +56,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 nav {
+    z-index: 999;
     position: fixed;
     top: 0;
     width: 100%;
