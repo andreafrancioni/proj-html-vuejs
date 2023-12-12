@@ -5,6 +5,7 @@ import AppFooter from "./components/AppFooter.vue"
 import AppProducts from "./components/AppProducts.vue";
 import AppProducts2 from "./components/AppProducts2.vue";
 import AppWeddingSection from "./components/AppWeddingSection.vue";
+import AppCards from "./components/AppCards.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
@@ -17,6 +18,7 @@ export default {
 		AppProducts,
 		AppWeddingSection,
 		AppProducts2,
+		AppCards,
 	},
 	data() {
 		return {
@@ -55,6 +57,7 @@ export default {
 		<AppProducts />
 		<AppWeddingSection />
 		<AppProducts2 />
+		<AppCards />
 	</main>
 	<footer>
 		<AppFooter />
