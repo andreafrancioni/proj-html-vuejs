@@ -77,7 +77,9 @@ export default {
 // importo variabili
 @use '../styles/partials/variables' as *;
 
-
+.col-6 {
+    padding: 1rem !important;
+}
 
 .services {
     padding: 0 10em;
@@ -117,9 +119,34 @@ export default {
     text-align: center;
 }
 
-.cardWrapper:hover .cardInfo {
-    display: block;
+.cardContent:hover .cardInfo {
+    opacity: 1;
 
+}
+
+.cardInfo {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+
+    .cardDesc {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .btn {
+            color: white;
+            background-color: $fontColorViolet;
+        }
+
+    }
 }
 
 .cardPoster {
@@ -142,30 +169,5 @@ export default {
 .cardInfo.corporate {
     background-image: url(../assets/corporate-hover-bg.jpg);
     background-size: cover;
-}
-
-.cardInfo {
-    display: none;
-    position: absolute;
-    top: 0;
-
-    height: 100%;
-    width: 100%;
-
-
-    .cardDesc {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        .btn {
-            color: white;
-            background-color: $fontColorViolet;
-        }
-
-    }
 }
 </style>
