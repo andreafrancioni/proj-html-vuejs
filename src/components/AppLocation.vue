@@ -37,7 +37,9 @@ export default {
             </div>
             <div class="col-6 bg-newyork">
                 <div class="image">
-                    <img src="../assets/new-york-bk.jpg" alt="">
+                    <div class="image-container">
+                        <img src="../assets/new-york-bk.jpg" alt="">
+                    </div>
                 </div>
                 <div class="city">
                     <div class="col-12">
@@ -60,7 +62,9 @@ export default {
             </div>
             <div class="col-6 bg-london">
                 <div class="image">
-                    <img src="../assets/london-bk.jpg" alt="">
+                    <div class="image-container">
+                        <img src="../assets/london-bk.jpg" alt="">
+                    </div>
                 </div>
                 <div class="city">
                     <div class="col-12">
@@ -128,6 +132,23 @@ h6 {
     img {
         width: 100%;
     }
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Aumenta la scala per l'ingrandimento desiderato */
 }
 
 .btn {
