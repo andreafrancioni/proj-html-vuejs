@@ -171,6 +171,9 @@ export default {
 
 
     .col-6 {
+
+        padding: 20px 0 !important;
+
         h2 {
             color: white;
             font-size: 56px;
