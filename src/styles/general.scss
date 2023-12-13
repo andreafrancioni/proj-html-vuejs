@@ -20,3 +20,19 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.swiper-button-prev {
+    color: white;
+    background-color: $fontColorViolet;
+    opacity: 60%;
+    width: 3rem;
+    height: 6rem;
+}
+
+.swiper-button-next {
+    color: white;
+    background-color: $fontColorViolet;
+    opacity: 60%;
+    width: 3rem;
+    height: 6rem;
+}
