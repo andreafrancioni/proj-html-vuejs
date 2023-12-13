@@ -26,17 +26,20 @@ export default {
 <template>
     <nav :style="{ backgroundColor: backgroundColor }">
         <div class="row">
+            <!-- LOGO -->
             <div class="col-3 d-flex align-items-center">
                 <img src="../assets/avada-bakery-logo.png" alt="">
             </div>
+            <!-- NAV MENU -->
             <div class="col-6 d-flex align-items-center">
                 <ul class="menuLinks d-flex align-items-center justify-content-between">
+                    <!-- Per ogni link all'interno dell'array di oggetto nello store genera un list item href -->
                     <li v-for="link in this.store.menuLinks">
                         <a :href="link.link">{{ link.titolo }}</a>
                     </li>
                 </ul>
-
             </div>
+            <!-- ACCOUNT E CARRELLO -->
             <div class="col-3 d-flex align-items-center justify-content-end">
                 <ul class="menuShop d-flex align-items-center justify-content-between">
                     <li>ACCOUNT</li>

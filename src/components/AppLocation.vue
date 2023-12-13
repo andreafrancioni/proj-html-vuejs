@@ -31,10 +31,12 @@ export default {
 <template>
     <div class="location">
         <div class="row">
+            <!-- TITOLO COLONNA -->
             <div class="col-12 d-flex flex-column align-items-center justify-content-center">
                 <h6>LOCATIONS</h6>
                 <h2>Visit our Bakeries</h2>
             </div>
+            <!-- NEW YORK-->
             <div class="col-6 bg-newyork">
                 <div class="image">
                     <div class="image-container">
@@ -60,6 +62,7 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- LONDON -->
             <div class="col-6 bg-london">
                 <div class="image">
                     <div class="image-container">

@@ -52,10 +52,12 @@ export default {
                 <button class="btn">Explore our products</button>
             </div>
         </div>
+        <!-- SLIDER SWIPER -->
         <div class="col-8">
             <div class="product-carousel">
                 <swiper :navigation="true" :modules="modules" class="mySwiper" :loop="true">
                     <swiper-slide>
+                        <!-- SLIDE 1 -->
                         <div class="productCard">
                             <div class="image">
                                 <img src="../assets/choco-chip-cookies.jpg" alt="">
@@ -66,6 +68,7 @@ export default {
                                 <h3>$18.00 - $32.00</h3>
                             </div>
                         </div>
+                        <!-- SLIDE 2 -->
                         <div class="productCard">
                             <div class="image">
                                 <img src="../assets/strawberry-jam-cookies.jpg" alt="">
@@ -78,6 +81,7 @@ export default {
                         </div>
                     </swiper-slide>
                     <swiper-slide>
+                        <!-- SLIDE 3 -->
                         <div class="productCard">
                             <div class="image">
                                 <img src="../assets/cookies-with-ice-cream.jpg" alt="">
@@ -88,6 +92,7 @@ export default {
                                 <h3>$18.00 - $32.00</h3>
                             </div>
                         </div>
+                        <!-- SLIDE 4 -->
                         <div class="productCard">
                             <div class="image">
                                 <img src="../assets/home-bread.jpg" alt="">
