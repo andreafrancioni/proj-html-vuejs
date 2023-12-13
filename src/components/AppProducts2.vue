@@ -155,14 +155,18 @@ export default {
     align-items: center;
 
     .image {
-        padding: 10px;
+        height: 378px;
+
+        img {
+            padding: 10px;
+            height: 280px;
+        }
 
         h5 {
             font-size: 24px;
             font-family: 'Source Serif 4';
             font-weight: 700;
             color: $fontColorViolet;
-            margin-top: 2rem;
         }
 
         h6 {
@@ -170,7 +174,7 @@ export default {
             font-weight: 400;
             font-size: 12px;
             color: $fontColorViolet;
-            margin-top: 1rem;
+
         }
     }
 
