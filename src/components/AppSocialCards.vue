@@ -25,7 +25,9 @@ export default {
     <div class="socialCards">
         <div class="row">
             <div class="col-3">
-                <img src="../assets/social-1.jpg" alt="">
+                <div class="image-container">
+                    <img src="../assets/social-1.jpg" alt="">
+                </div>
             </div>
             <div class="col-6 accrocchio">
                 <div class="bg-pink d-flex flex-column align-items-center justify-content-center h-100">
@@ -35,20 +37,30 @@ export default {
                 </div>
             </div>
             <div class="col-3">
-                <img class="ps-4" src="../assets/social-2.jpg" alt="">
+                <div class="image-container">
+                    <img class="ps-4" src="../assets/social-2.jpg" alt="">
+                </div>
             </div>
 
             <div class="col-3">
-                <img src="../assets/social-3.jpg" alt="">
+                <div class="image-container">
+                    <img src="../assets/social-3.jpg" alt="">
+                </div>
             </div>
             <div class="col-3">
-                <img class="ps-4" src="../assets/social-4.jpg" alt="">
+                <div class="image-container">
+                    <img class="ps-4" src="../assets/social-4.jpg" alt="">
+                </div>
             </div>
             <div class="col-3">
-                <img class="ps-4" src="../assets/social-5.jpg" alt="">
+                <div class="image-container">
+                    <img class="ps-4" src="../assets/social-5.jpg" alt="">
+                </div>
             </div>
             <div class="col-3">
-                <img class="ps-4" src="../assets/social-6.jpg" alt="">
+                <div class="image-container">
+                    <img class="ps-4" src="../assets/social-6.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -102,5 +114,23 @@ img {
     object-position: left;
     width: 300px;
     height: 400px;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* Aumenta la scala per l'ingrandimento desiderato */
 }
 </style>

@@ -81,6 +81,7 @@ export default {
 
 .services {
     padding: 0 10em;
+    margin-top: 3rem;
 }
 
 .services-text {
@@ -118,6 +119,7 @@ export default {
 
 .cardWrapper:hover .cardInfo {
     display: block;
+
 }
 
 .cardPoster {
