@@ -56,19 +56,47 @@ export default {
             <div class="product-carousel">
                 <swiper :navigation="true" :modules="modules" class="mySwiper" :loop="true">
                     <swiper-slide>
-                        <div class="image">
-                            <img src="../assets/choco-chip-cookies.jpg" alt="">
+                        <div class="productCard">
+                            <div class="image">
+                                <img src="../assets/choco-chip-cookies.jpg" alt="">
+                            </div>
+                            <div class="text d-flex flex-column align-items-center justify-content-center">
+                                <h5>Choco Chip Cookies</h5>
+                                <h6>Cookies, Pastries</h6>
+                                <h3>$18.00 - $32.00</h3>
+                            </div>
                         </div>
-                        <div class="image">
-                            <img src="../assets/strawberry-jam-cookies.jpg" alt="">
+                        <div class="productCard">
+                            <div class="image">
+                                <img src="../assets/strawberry-jam-cookies.jpg" alt="">
+                            </div>
+                            <div class="text d-flex flex-column align-items-center justify-content-center">
+                                <h5>Strawberry Jam Cookies</h5>
+                                <h6>Cookies, Pastries</h6>
+                                <h3>$18.00 - $32.00</h3>
+                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
-                        <div class="image">
-                            <img src="../assets/cookies-with-ice-cream.jpg" alt="">
+                        <div class="productCard">
+                            <div class="image">
+                                <img src="../assets/cookies-with-ice-cream.jpg" alt="">
+                            </div>
+                            <div class="text d-flex flex-column align-items-center justify-content-center">
+                                <h5>Cookies with Ice Cream</h5>
+                                <h6>Cookies, Pastries</h6>
+                                <h3>$18.00 - $32.00</h3>
+                            </div>
                         </div>
-                        <div class="image">
-                            <img src="../assets/home-bread.jpg" alt="">
+                        <div class="productCard">
+                            <div class="image">
+                                <img src="../assets/home-bread.jpg" alt="">
+                            </div>
+                            <div class="text d-flex flex-column align-items-center justify-content-center">
+                                <h5>Homemade Bread</h5>
+                                <h6>Cookies, Pastries</h6>
+                                <h3>$18.00 - $32.00</h3>
+                            </div>
                         </div>
                     </swiper-slide>
                 </swiper>
@@ -112,7 +140,48 @@ export default {
 }
 
 .image {
+    position: relative;
+
+    img {
+        padding: 10px;
+    }
+
+}
+
+
+.productCard:hover .text {
+    opacity: 1;
+}
+
+.text {
+    width: 50%;
     padding: 10px;
+    transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #56328b6f;
+
+    h3 {
+        font-family: 'Work Sans';
+        color: white;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-family: 'Source Serif 4';
+        font-weight: 700;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    h6 {
+        font-family: 'Work Sans';
+        font-weight: 400;
+        font-size: 12px;
+        color: white;
+    }
 }
 
 .swiper {
