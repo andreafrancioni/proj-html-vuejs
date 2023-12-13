@@ -31,13 +31,9 @@ export default {
             </div>
             <div class="col-6 d-flex align-items-center">
                 <ul class="menuLinks d-flex align-items-center justify-content-between">
-                    <li>HOME</li>
-                    <li>SHOP</li>
-                    <li>ABOUT</li>
-                    <li>GALLERY</li>
-                    <li>LOCATIONS</li>
-                    <li>JOURNAL</li>
-                    <li>CONTACT</li>
+                    <li v-for="link in this.store.menuLinks">
+                        <a :href="link.link">{{ link.titolo }}</a>
+                    </li>
                 </ul>
 
             </div>
@@ -80,6 +76,15 @@ ul {
         color: $fontColorViolet;
         font-size: 12px;
         font-weight: 400;
+
+        a {
+            text-decoration: none;
+            color: $fontColorViolet;
+        }
+
+        a:hover {
+            border-bottom: 1px solid $fontColorViolet;
+        }
     }
 }
 </style>

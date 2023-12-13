@@ -30,13 +30,9 @@ export default {
                 </div>
                 <div class="col-12">
                     <ul class="d-flex align-items-center justify-content-between flex-wrap">
-                        <li>Shop</li>
-                        <li>About</li>
-                        <li>Gallery</li>
-                        <li>Locations</li>
-                        <li>Journal</li>
-                        <li>Contact</li>
-                        <li>Orders</li>
+                        <li v-for="link in this.store.menuLinks">
+                            <a :href="link.link">{{ link.titolo }}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -110,6 +106,15 @@ ul {
         font-size: 16px;
         font-family: "Work Sans";
         font-weight: 300;
+
+        a {
+            text-decoration: none;
+            color: $fontColorViolet;
+        }
+
+        a:hover {
+            border-bottom: 1px solid $fontColorViolet;
+        }
     }
 }
 
