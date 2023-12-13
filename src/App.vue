@@ -8,6 +8,7 @@ import AppWeddingSection from "./components/AppWeddingSection.vue";
 import AppCards from "./components/AppCards.vue";
 import AppLocation from "./components/AppLocation.vue";
 import AppSocialCards from "./components/AppSocialCards.vue";
+import AppShopNow from "./components/AppShopNow.vue";
 
 import axios from 'axios'; //importo Axios
 import { store } from "./store.js" //state management
@@ -23,6 +24,7 @@ export default {
 		AppCards,
 		AppLocation,
 		AppSocialCards,
+		AppShopNow,
 	},
 	data() {
 		return {
@@ -64,6 +66,7 @@ export default {
 		<AppCards />
 		<AppLocation />
 		<AppSocialCards />
+		<AppShopNow />
 	</main>
 	<footer>
 		<AppFooter />
@@ -77,9 +80,8 @@ export default {
 
 <style scoped lang="scss">
 // importo variabili
-// @use './styles/partials/variables' as *;
+@use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di App.vue
 
 .pb-96 {
 	padding-bottom: 96px;
