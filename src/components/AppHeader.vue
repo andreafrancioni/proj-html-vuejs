@@ -7,6 +7,7 @@ export default {
 
     props: {
         backgroundColor: String,
+        bannerDisplay: String,
     },
     data() {
         return {
@@ -26,7 +27,7 @@ export default {
 <template>
     <nav :style="{ backgroundColor: backgroundColor }">
         <div class="row bg-pink">
-            <div class="col-12 d-flex align-items-center justify-content-center">
+            <div :style="{ display: bannerDisplay }" class="col-12 align-items-center justify-content-center">
                 <p>Free international shipping - 10% OFF SITE</p>
             </div>
         </div>
@@ -81,7 +82,7 @@ nav {
     top: 0;
     width: 100%;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     /* Aggiungi un'animazione al cambio di colore */
 
     .row {

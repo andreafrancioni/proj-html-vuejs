@@ -30,6 +30,7 @@ export default {
 		return {
 			store,
 			headerBackgroundColor: 'transparent', // Colore di sfondo iniziale dell'header
+			bannerDisplay: 'flex',
 			scrollThreshold: 50, // Altezza di scroll per cambiare il colore
 		}
 	},
@@ -44,7 +45,9 @@ export default {
 			// Verifica l'altezza dello scroll rispetto al threshold
 			if (window.scrollY > this.scrollThreshold) {
 				this.headerBackgroundColor = 'white'; // Cambia il colore dell'header
+				this.bannerDisplay = 'none';
 			} else {
+				this.bannerDisplay = 'flex';
 				this.headerBackgroundColor = 'transparent'; // Ripristina il colore di sfondo iniziale
 			}
 		},
@@ -55,7 +58,7 @@ export default {
 <template>
 	<header>
 		<section class="pb-96">
-			<AppHeader :backgroundColor="headerBackgroundColor" />
+			<AppHeader :backgroundColor="headerBackgroundColor" :bannerDisplay="bannerDisplay" />
 		</section>
 	</header>
 	<main>
