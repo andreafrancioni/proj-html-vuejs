@@ -33,7 +33,7 @@ export default {
                 <div class="bg-pink d-flex flex-column align-items-center justify-content-center h-100">
                     <h6>MADE FOR SHARING</h6>
                     <h2>Let's stay in touch</h2>
-                    <button class="btn">Follow Us</button>
+                    <button class="btn"> <font-awesome-icon icon="fab fa-instagram" /> Follow Us</button>
                 </div>
             </div>
             <div class="col-3">

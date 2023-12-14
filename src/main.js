@@ -13,8 +13,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+
 /* add icons to the library */
-library.add(faHome);
+library.add(faHome, faCartShopping, faInstagram);
 
 window.vue = {};
 window.vue.App = createApp(App)

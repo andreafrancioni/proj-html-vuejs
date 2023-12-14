@@ -25,6 +25,11 @@ export default {
 
 <template>
     <nav :style="{ backgroundColor: backgroundColor }">
+        <div class="row bg-pink">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <p>Free international shipping - 10% OFF SITE</p>
+            </div>
+        </div>
         <div class="row">
             <!-- LOGO -->
             <div class="col-3 d-flex align-items-center">
@@ -43,7 +48,7 @@ export default {
             <div class="col-3 d-flex align-items-center justify-content-end">
                 <ul class="menuShop d-flex align-items-center justify-content-between">
                     <li>ACCOUNT</li>
-                    <li><i class="fas fa-cart-shopping"></i></li>
+                    <li><font-awesome-icon icon="fa-solid fa-cart-shopping" /></li>
                 </ul>
             </div>
         </div>
@@ -53,6 +58,22 @@ export default {
 <style scoped lang="scss">
 // importo variabili
 @use '../styles/partials/variables' as *;
+
+.bg-pink {
+    background-color: #F9F1F2;
+}
+
+img {
+    width: 150px;
+}
+
+p {
+    font-family: "Work Sans";
+    font-size: 14px;
+    font-weight: 400;
+    color: $fontColorViolet;
+    margin: 10px;
+}
 
 nav {
     z-index: 999;
